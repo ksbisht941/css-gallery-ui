@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
+
+  display: grid;
+  grid-template-columns: 80px 1fr;
+}
+
+aside {
+  display: grid;
+  grid-template-rows: 80px 1fr 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+aside .logo {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+aside nav ul.nav-list {
+  list-style: none;
+}
+
+aside nav ul.nav-list li.nav-item {
+  text-align: center;
+}
+
+aside nav ul.nav-list li.nav-item:not(:last-child) {
+  margin-bottom: 70px;
+}
+
+aside nav ul.nav-list li.nav-item a.nav-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+
+aside .humburger {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 1fr 80px;
+}
+
+main .collection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  box-sizing: content-box;
+}
+
+main .collection .gallery {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+
+main .collection .gallery .theme {
+  position: absolute;
+  top: 70px;
+  left: 40px;
+  font-size: 40px;
+  font-weight: 700;
+  z-index: 2;
+  color: #fff;
+}
+
+main .collection .gallery .theme span {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+}
+
+main .collection .gallery .number {
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+  font-size: 70px;
+  font-weight: 700;
+  z-index: 2;
+  color: #fff;
+}
+
+main .collection .gallery video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  z-index: 1;
+}
+
+main .collection .gallery .progress {
+  max-width: 95%;
+  width: 100%;
+  height: 6px;
+  position: absolute;
+  bottom: 50px;
+  left: 2.5%;
+  z-index: 9;
+}
+
+main .collection .gallery:nth-child(odd) {
+  border-bottom: 20px solid #fff;
+}
+
+main .collection .gallery:nth-child(even) {
+  border-top: 20px solid #fff;
+}
+
+main .social {
+  padding: 20px 50px;
+  display: grid;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+main .social ul.social-list {
+  list-style: none;
+}
+
+main .social ul.social-list li.social-item {
+  display: inline-block;
+}
+
+main .social ul.social-list li.social-item:not(:last-child) {
+  margin-right: 70px;
+}
+
+main .social ul.social-list li.social-item a.social-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
